@@ -2,7 +2,8 @@
 
 
 <template>
-  <div id="screenshot" class="container" @mousemove="move" @mousedown="mouseDown" @mouseup="mouseUp">
+  <div id="screenshot" 
+  class="container" @mousemove="move" @mousedown="mouseDown" @mouseup="mouseUp">
   
   <transition name="screenshot">
     <div class="Flash" v-if="tookScreenShot"></div>
@@ -20,6 +21,8 @@
 </template>
 
 <script>
+import Vue from 'vue'
+
 var crosshairs,
     overlay,
     tooltip;
